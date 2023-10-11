@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/cadastro.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="div_externa_form">
+        <div class="div_interna_form">
+        <form action="cadastro.php" method="post" class="form">
+            
+                <div class="form_camp">
+                    <label name="nome" id="nome" >Nome:</label>
+                    <input type="text" name="nome" id="nome" required  >
+                </div>
+                <div class="form_camp">
+                    <label name="email" id="email" >E-mail:</label>
+                    <input type="email" name="email" id="email" required  >
+                </div>
+                <div class="form_camp">
+                    <label name="dt_nasc" id="dt_nasc" >Digite data de nascimento </label>
+                    <input type="date" name="dt_nasc" id="dt_nasc" required  >
+                </div>
+                <div class="form_camp">
+                    <label name="senha" id="senha" >Digite sua senha </label>
+                    <input type="senha" name="senha" id="senha" required  >
+                </div>
+                <div class="form_camp">
+                    <input type="submit" value="cadastar" >
+                </div>
+            </div>
+        </div>
+        </form>
+    </div> 
+    
+</body>
+</html>
