@@ -1,4 +1,11 @@
 
+<?php
+    include "conexao.php";
+
+    $nome=$_GET['nome'];
+    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +16,7 @@
 <body>
 
 
-    <h2>ola <?php echo ?> seja bem vindo</h2>
+    <h2>ola <?php echo $nome ?> seja bem vindo</h2>
 
 </body>
 </html>

@@ -6,15 +6,15 @@
 
     $logsenha =$_POST['senha'];
 
-    $sql_dados_db = "SELECT * FROM tb_aluno";
+    $sql_dados_db = "SELECT * FROM pessoa where senha == $logsenha";
 
     $dados_db = mysqli_query($conexao, $sql_dados_db);
 
     $dados = mysqli_fetch_array($dados_db);
 
-    if( $dados['senha'] == $logsenha){
+    if( $logsenha == $dados['senha']){
 
-        header("location: area_aluno.php?senha=$dados[senha]");
+        header("location:area_aluno.php?nome=$dados[nome]");
         
 
     }else{
